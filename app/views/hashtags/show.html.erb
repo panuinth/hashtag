@@ -1,0 +1,9 @@
+<h1>Brand 1 (<%= @result.count %>)</h1>
+<ul>
+<% @result.each do |b| %>
+  <li>Created at: <%= b.created_at %></li>
+  <li>Tweet: <%= b.text %></li>
+  <li>User: <%= b.user.name %></li>
+  <br/>
+<% end %>
+</ul>
